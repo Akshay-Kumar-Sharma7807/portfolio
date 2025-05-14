@@ -1,0 +1,18 @@
+[
+  {
+    "heroImage": "https://example.com/hero-image.jpg",
+    "title": "Project 1",
+    "description": "This is a sample project.",
+    "technologiesUsed": ["React", "TypeScript", "Tailwind CSS"],
+    "screenshot": "https://example.com/screenshot.jpg",
+    "link": "https://example.com/project-1"
+  },
+  {
+    "heroImage": "https://example.com/hero-image-2.jpg",
+    "title": "Project 2",
+    "description": "This is another sample project.",
+    "technologiesUsed": ["Angular", "JavaScript", "Bootstrap"],
+    "screenshot": "https://example.com/screenshot-2.jpg",
+    "link": "https://example.com/project-2"
+  }
+]
