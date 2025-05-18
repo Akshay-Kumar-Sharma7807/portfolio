@@ -135,14 +135,14 @@ export function Certificates() {
               <h3 className="text-xl font-semibold mb-2">{ride.title}</h3>
 
               <div className="grid grid-cols-3 gap-4 text-gray-400 mb-4">
-                <div>
+                {/* <div>
                   <p className="text-sm">Distance</p>
                   <p className="font-semibold text-white">{ride.distance}</p>
                 </div>
                 <div>
                   <p className="text-sm">Elevation</p>
                   <p className="font-semibold text-white">{ride.elevation}</p>
-                </div>
+                </div> */}
                 <div>
                   <p className="text-sm">Date</p>
                   <p className="font-semibold text-white">{ride.date}</p>
