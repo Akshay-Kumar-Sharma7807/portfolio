@@ -9,8 +9,11 @@ import jklu from "../assets/Certificates/47.png";
 import cs50x from "../assets/Certificates/cs50x.png";
 import cs50p from "../assets/Certificates/cs50p.png";
 import scientificpy from "../assets/Certificates/scientificpy.png";
+import isro from "../assets/Certificates/isro.png";
+import vvm from "../assets/Certificates/vvm.png";
+import sapro from "../assets/Certificates/sapro.png";
 
-interface Ride {
+interface Certificate {
   title: string;
   distance: string;
   elevation: string;
@@ -19,7 +22,7 @@ interface Ride {
   link: string;
 }
 
-const rides: Ride[] = [
+const certificates: Certificate[] = [
   {
     title: "CS50x: Introduction to Computer Science",
     distance: "42km",
@@ -93,6 +96,30 @@ const rides: Ride[] = [
     link: "https://www.freecodecamp.org/certification/akshay-kumar-sharma/quality-assurance-v7",
   },
   {
+    title: "ISRO - Remote Sensing for Natural Resource Studies",
+    distance: "65km",
+    elevation: "320m",
+    date: "6/2023",
+    image: isro,
+    link: "",
+  },
+  {
+    title: "DST Geospatial Hackathon Finalist",
+    distance: "65km",
+    elevation: "320m",
+    date: "8/2023",
+    image: sapro,
+    link: "",
+  },
+  {
+    title: "Vidhyarthi Vigyan Manthan",
+    distance: "65km",
+    elevation: "320m",
+    date: "11/2022",
+    image: vvm,
+    link: "",
+  },
+  {
     title: "Aarohan 2025",
     distance: "65km",
     elevation: "320m",
@@ -118,41 +145,47 @@ export function Certificates() {
         Certificates
       </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {rides.map((ride, index) => (
+        {certificates.map((certificate, index) => (
           <motion.div
-            key={ride.title}
+            key={certificate.title}
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: index * 0.1 }}
             className="bg-gray-800 rounded-lg overflow-hidden text-white"
           >
             <img
-              src={ride.image}
-              alt={ride.title}
+              src={certificate.image}
+              alt={certificate.title}
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{ride.title}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {certificate.title}
+              </h3>
 
               <div className="grid grid-cols-3 gap-4 text-gray-400 mb-4">
                 {/* <div>
                   <p className="text-sm">Distance</p>
-                  <p className="font-semibold text-white">{ride.distance}</p>
+                  <p className="font-semibold text-white">{certificate.distance}</p>
                 </div>
                 <div>
                   <p className="text-sm">Elevation</p>
-                  <p className="font-semibold text-white">{ride.elevation}</p>
+                  <p className="font-semibold text-white">{certificate.elevation}</p>
                 </div> */}
                 <div>
                   <p className="text-sm">Date</p>
-                  <p className="font-semibold text-white">{ride.date}</p>
+                  <p className="font-semibold text-white">{certificate.date}</p>
                 </div>
               </div>
-              <a href={ride.link} target="_blank">
-                <div className="bg-gray-700 text-xs px-4 py-2 rounded">
-                  View Certificate
-                </div>
-              </a>
+              {certificate.link === "" ? (
+                <></>
+              ) : (
+                <a href={certificate.link} target="_blank">
+                  <div className="bg-gray-700 text-xs px-4 py-2 rounded">
+                    View Certificate
+                  </div>
+                </a>
+              )}
             </div>
           </motion.div>
         ))}
