@@ -8,18 +8,18 @@ export function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="relative min-h-screen flex items-center"
+      className="relative min-h-screen flex items-center pt-20 md:pt-0"
     >
       <div className="fixed left-0 top-0 h-full w-1">
         <div className="h-full w-full bg-gradient-to-b from-orange-500 via-purple-500 to-blue-500" />
       </div>
 
-      <div className="w-full max-w-6xl mx-auto pl-8 pr-16">
+      <div className="w-full max-w-6xl mx-auto px-4 md:pl-8 md:pr-16">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-[12rem] font-bold leading-none tracking-tighter"
+          className="text-5xl sm:text-7xl md:text-9xl lg:text-[12rem] font-bold leading-none tracking-tighter"
         >
           Hello!
         </motion.h1>
@@ -28,9 +28,9 @@ export function Home() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-8 max-w-2xl"
+          className="mt-4 md:mt-8 max-w-2xl"
         >
-          <p className="text-xl text-gray-300 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
             I'm a student and a full stack developer, currently honing my skills
             and building projects. I'm always building something new.{" "}
             <a
@@ -47,7 +47,7 @@ export function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mt-8"
+            className="mt-6 md:mt-8"
           >
             <Link
               to="/work"
