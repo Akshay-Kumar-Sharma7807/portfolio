@@ -183,10 +183,10 @@ export const Contact = () => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.6 }}
-        className="space-y-6"
+        className="space-y-6 mb-10"
       >
         <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
-        <div className="space-y-4 text-gray-300">
+        <div className="space-y-4 text-gray-300 mb-4">
           <div className="flex items-center space-x-3">
             <span className="text-orange-500 font-medium">Email:</span>
             <a
@@ -194,15 +194,6 @@ export const Contact = () => {
               className="hover:text-orange-500 transition-colors"
             >
               sharmaakshaykumar7807@gmail.com
-            </a>
-          </div>
-          <div className="flex items-center space-x-3">
-            <span className="text-orange-500 font-medium">Phone:</span>
-            <a
-              href="tel:+918209332962"
-              className="hover:text-orange-500 transition-colors"
-            >
-              +91-8209332962
             </a>
           </div>
         </div>
