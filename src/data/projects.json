@@ -4,13 +4,13 @@
     "title": "Saplings Protector",
     "description": "A Progressive Web App (PWA) to protect trees and promote green spaces",
     "longDescription": "Saplings Protector is a comprehensive Progressive Web App designed to help communities protect and monitor urban trees. The application combines modern web technologies with environmental consciousness to create a platform where users can report tree damage, track tree health, and coordinate community efforts to maintain green spaces. Built with React and integrated with Leaflet mapping technology, the app provides an intuitive interface for both casual users and environmental activists. The PWA architecture ensures the app works offline, making it accessible even in areas with limited connectivity, which is crucial for field work and outdoor tree monitoring activities.",
-    "heroImage": "/src/assets/saplings-protector.png",
+    "heroImage": "/assets/sapro.png",
     "images": [
-      "/src/assets/sapro.png",
-      "/src/assets/sapro2.png",
-      "/src/assets/sapro3.png",
-      "/src/assets/sapro4.png",
-      "/src/assets/sapro5.png"
+      "/assets/sapro.png",
+      "/assets/sapro2.png",
+      "/assets/sapro3.png",
+      "/assets/sapro4.png",
+      "/assets/sapro5.png"
     ],
     "technologiesUsed": [
       "PWA",
@@ -43,13 +43,12 @@
     "title": "Modern Todo App",
     "description": "A feature-rich todo application with dark mode and priority based task management",
     "longDescription": "The Modern Todo App represents a sophisticated approach to task management, combining elegant design with powerful functionality. Built with React and Redux for state management, this application goes beyond simple task lists to provide a comprehensive productivity solution. The app features a beautiful dark mode interface, priority-based task organization, and advanced filtering capabilities. Users can categorize tasks, set due dates, add detailed descriptions, and track their productivity over time. The application demonstrates modern React patterns, efficient state management, and responsive design principles while maintaining excellent performance and user experience.",
-    "heroImage": "/src/assets/todo.png",
+    "heroImage": "/assets/todo.png",
     "images": [
-      "/src/assets/todo.png",
-      "/src/assets/todo2.png",
-      "/src/assets/todo3.png",
-      "/src/assets/todo4.png"
-
+      "/assets/todo.png",
+      "/assets/todo2.png",
+      "/assets/todo3.png",
+      "/assets/todo4.png"
     ],
     "technologiesUsed": [
       "React",
@@ -122,11 +121,11 @@
     "title": "Game App",
     "description": "An immersive and engaging mobile game application",
     "longDescription": "The Game App is an engaging and interactive gaming experience built using modern web technologies. This project showcases the versatility of React in creating dynamic, real-time applications beyond traditional web interfaces. The game features smooth animations, responsive controls, and an intuitive user interface that works seamlessly across different devices. Built with HTML5 Canvas and CSS animations, the game demonstrates advanced JavaScript programming concepts including game loops, collision detection, and state management. The application serves as an excellent example of how web technologies can be used to create compelling gaming experiences that rival native applications.",
-    "heroImage": "/src/assets/game.png",
+    "heroImage": "/assets/game.png",
     "images": [
-      "/src/assets/game.png",
-      "/src/assets/game2.png",
-      "/src/assets/game3.png"
+      "/assets/game.png",
+      "/assets/game2.png",
+      "/assets/game3.png"
     ],
     "technologiesUsed": [
       "React",

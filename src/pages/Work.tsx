@@ -6,24 +6,7 @@ import ErrorBoundary from "../components/ErrorBoundary";
 import FallbackImage from "../components/FallbackImage";
 import PageTransition from "../components/PageTransition";
 
-// Import local assets for fallback
-import sapro from "../assets/sapro.png";
-import todo from "../assets/todo.png";
-import game from "../assets/game.png";
-
 const projects: ProjectData[] = projectsData as ProjectData[];
-
-// Asset mapping for local images
-const assetMap: Record<string, string> = {
-  "/src/assets/saplings-protector.png": sapro,
-  "/src/assets/todo.png": todo,
-  "/src/assets/game.png": game,
-};
-
-// Helper function to resolve image paths
-const resolveImagePath = (imagePath: string): string => {
-  return assetMap[imagePath] || imagePath;
-};
 
 export function Work() {
   return (
@@ -78,7 +61,7 @@ export function Work() {
                 transition={{ duration: 0.3 }}
               >
                 <FallbackImage
-                  src={resolveImagePath(project.heroImage)}
+                  src={project.heroImage}
                   alt={project.title}
                   className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-out"
                   fallbackIcon="project"
