@@ -22,7 +22,7 @@ export function About() {
         className="space-y-6 text-lg text-gray-300"
       >
         <p>
-          I'm a Creative Developer with over 4 years of experience in building
+          I'm a Creative Developer with over 2 years of experience in building
           digital experiences that combine technical excellence with stunning
           design.
         </p>
@@ -48,6 +48,10 @@ export function About() {
               "Tailwind CSS",
               "TypeScript",
               "Firebase",
+              "C",
+              "DSA",
+              "PWA",
+              
             ].map((skill) => (
               <span
                 key={skill}

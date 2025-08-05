@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { Home } from "./pages/Home";
 // import { Music } from "./pages/Music";
 import { Certificates } from "./pages/Certificates";
@@ -17,15 +18,19 @@ const ProjectWrapper = () => {
 };
 
 export function AppRoutes() {
+  const location = useLocation();
+  
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      {/* <Route path="/music" element={<Music />} /> */}
-      <Route path="/work" element={<Work />} />
-      <Route path="/certificates" element={<Certificates />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/project/:projectId" element={<ProjectWrapper />} />
-    </Routes>
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/music" element={<Music />} /> */}
+        <Route path="/work" element={<Work />} />
+        <Route path="/certificates" element={<Certificates />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/project/:projectId" element={<ProjectWrapper />} />
+      </Routes>
+    </AnimatePresence>
   );
 }

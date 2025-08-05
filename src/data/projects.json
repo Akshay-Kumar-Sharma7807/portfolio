@@ -1,18 +1,159 @@
 [
   {
-    "heroImage": "https://example.com/hero-image.jpg",
-    "title": "Project 1",
-    "description": "This is a sample project.",
-    "technologiesUsed": ["React", "TypeScript", "Tailwind CSS"],
-    "screenshot": "https://example.com/screenshot.jpg",
-    "link": "https://example.com/project-1"
+    "id": "saplings-protector",
+    "title": "Saplings Protector",
+    "description": "A Progressive Web App (PWA) to protect trees and promote green spaces",
+    "longDescription": "Saplings Protector is a comprehensive Progressive Web App designed to help communities protect and monitor urban trees. The application combines modern web technologies with environmental consciousness to create a platform where users can report tree damage, track tree health, and coordinate community efforts to maintain green spaces. Built with React and integrated with Leaflet mapping technology, the app provides an intuitive interface for both casual users and environmental activists. The PWA architecture ensures the app works offline, making it accessible even in areas with limited connectivity, which is crucial for field work and outdoor tree monitoring activities.",
+    "heroImage": "/src/assets/saplings-protector.png",
+    "images": [
+      "/src/assets/sapro.png",
+      "/src/assets/sapro2.png",
+      "/src/assets/sapro3.png",
+      "/src/assets/sapro4.png",
+      "/src/assets/sapro5.png"
+    ],
+    "technologiesUsed": [
+      "PWA",
+      "React",
+      "Leaflet",
+      "TypeScript",
+      "Service Workers"
+    ],
+    "liveUrl": "https://saplings-protector.netlify.app",
+    "githubUrl": null,
+    "features": [
+      "Interactive map interface for tree location tracking",
+      "Offline functionality with service workers",
+      "Real-time tree health monitoring",
+      "Community reporting system",
+      "Push notifications for tree alerts",
+      "Responsive design for mobile and desktop",
+      "Geolocation integration for precise tree mapping"
+    ],
+    "challenges": [
+      "Implementing offline-first architecture with service workers",
+      "Optimizing map performance on mobile devices",
+      "Handling large datasets of tree locations efficiently",
+      "Creating intuitive UX for both technical and non-technical users"
+    ],
+    "category": "Progressive Web App"
   },
   {
-    "heroImage": "https://example.com/hero-image-2.jpg",
-    "title": "Project 2",
-    "description": "This is another sample project.",
-    "technologiesUsed": ["Angular", "JavaScript", "Bootstrap"],
-    "screenshot": "https://example.com/screenshot-2.jpg",
-    "link": "https://example.com/project-2"
+    "id": "modern-todo-app",
+    "title": "Modern Todo App",
+    "description": "A feature-rich todo application with dark mode and priority based task management",
+    "longDescription": "The Modern Todo App represents a sophisticated approach to task management, combining elegant design with powerful functionality. Built with React and Redux for state management, this application goes beyond simple task lists to provide a comprehensive productivity solution. The app features a beautiful dark mode interface, priority-based task organization, and advanced filtering capabilities. Users can categorize tasks, set due dates, add detailed descriptions, and track their productivity over time. The application demonstrates modern React patterns, efficient state management, and responsive design principles while maintaining excellent performance and user experience.",
+    "heroImage": "/src/assets/todo.png",
+    "images": [
+      "/src/assets/todo.png",
+      "/src/assets/todo2.png",
+      "/src/assets/todo3.png",
+      "/src/assets/todo4.png"
+
+    ],
+    "technologiesUsed": [
+      "React",
+      "Redux",
+      "Styled-components",
+      "TypeScript",
+      "Local Storage"
+    ],
+    "liveUrl": "https://aks-todo.netlify.app",
+    "githubUrl": "https://github.com/Akshay-Kumar-Sharma7807/todo-app",
+    "features": [
+      "Priority-based task management system",
+      "Dark mode and light mode themes",
+      "Advanced filtering and sorting options",
+      "Task categories and labels",
+      "Due date tracking and reminders",
+      "Productivity analytics and insights",
+      "Drag and drop task reordering",
+      "Local storage persistence"
+    ],
+    "challenges": [
+      "Implementing complex state management with Redux",
+      "Creating smooth animations and transitions",
+      "Optimizing performance for large task lists",
+      "Designing intuitive priority and categorization systems"
+    ],
+    "category": "Web Application"
+  },
+  {
+    "id": "geolocation-attendance-app",
+    "title": "Geolocation Attendance Tracking App",
+    "description": "A mobile application for tracking attendance using geolocation data",
+    "longDescription": "The Geolocation Attendance Tracking App is a sophisticated mobile solution designed for organizations that need accurate, location-based attendance monitoring. Built with React Native and integrated with Firebase for real-time data synchronization, this application ensures employees can only check in when they are physically present at designated work locations. The app uses advanced geofencing technology to create virtual boundaries around work sites, preventing fraudulent check-ins from remote locations. With features like offline capability, detailed reporting, and administrative dashboards, this application serves both employees and managers with a comprehensive attendance management system.",
+    "heroImage": "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?q=80&w=2426&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?q=80&w=2426&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2426&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=2426&auto=format&fit=crop"
+    ],
+    "technologiesUsed": [
+      "React Native",
+      "Geolocation",
+      "Firebase",
+      "TypeScript",
+      "Expo"
+    ],
+    "liveUrl": null,
+    "githubUrl": null,
+    "features": [
+      "GPS-based location verification",
+      "Geofencing for work site boundaries",
+      "Real-time attendance tracking",
+      "Offline capability with sync when online",
+      "Administrative dashboard for managers",
+      "Detailed attendance reports and analytics",
+      "Push notifications for check-in reminders",
+      "Multi-location support for organizations"
+    ],
+    "challenges": [
+      "Implementing accurate geolocation tracking",
+      "Handling GPS accuracy variations and edge cases",
+      "Creating efficient offline data storage and synchronization",
+      "Balancing battery usage with location tracking frequency",
+      "Ensuring data security and privacy compliance"
+    ],
+    "category": "Mobile Application"
+  },
+  {
+    "id": "game-app",
+    "title": "Game App",
+    "description": "An immersive and engaging mobile game application",
+    "longDescription": "The Game App is an engaging and interactive gaming experience built using modern web technologies. This project showcases the versatility of React in creating dynamic, real-time applications beyond traditional web interfaces. The game features smooth animations, responsive controls, and an intuitive user interface that works seamlessly across different devices. Built with HTML5 Canvas and CSS animations, the game demonstrates advanced JavaScript programming concepts including game loops, collision detection, and state management. The application serves as an excellent example of how web technologies can be used to create compelling gaming experiences that rival native applications.",
+    "heroImage": "/src/assets/game.png",
+    "images": [
+      "/src/assets/game.png",
+      "/src/assets/game2.png",
+      "/src/assets/game3.png"
+    ],
+    "technologiesUsed": [
+      "React",
+      "HTML5 Canvas",
+      "CSS3",
+      "JavaScript",
+      "Web APIs"
+    ],
+    "liveUrl": "https://aks-games.netlify.app",
+    "githubUrl": "https://github.com/Akshay-Kumar-Sharma7807/game-app",
+    "features": [
+      "Smooth 60fps gameplay with optimized rendering",
+      "Responsive controls for touch and keyboard input",
+      "Progressive difficulty levels",
+      "High score tracking and leaderboards",
+      "Sound effects and background music",
+      "Pause and resume functionality",
+      "Mobile-optimized touch controls",
+      "Cross-browser compatibility"
+    ],
+    "challenges": [
+      "Implementing smooth game loops and animation timing",
+      "Optimizing performance for consistent frame rates",
+      "Creating responsive controls that work on both desktop and mobile",
+      "Managing game state and collision detection efficiently",
+      "Balancing game difficulty and user engagement"
+    ],
+    "category": "Game Application"
   }
 ]
