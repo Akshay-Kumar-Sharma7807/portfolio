@@ -7,6 +7,7 @@ import datavis from "../assets/Certificates/datavis.jpg";
 import api from "../assets/Certificates/api.jpg";
 import jklu from "../assets/Certificates/47.png";
 import cs50x from "../assets/Certificates/cs50x.png";
+import rhcsa from "../assets/Certificates/rhcsa.png";
 import cs50p from "../assets/Certificates/cs50p.png";
 import scientificpy from "../assets/Certificates/scientificpy.png";
 import isro from "../assets/Certificates/isro.png";
@@ -46,6 +47,14 @@ const certificates: Certificate[] = [
     date: "12/2021",
     image: scientificpy,
     link: "https://www.freecodecamp.org/certification/akshay-kumar-sharma/scientific-computing-with-python-v7",
+  },
+  {
+    title: "RHCSA: Red Hat Certified System Administrator",
+    distance: "42km",
+    elevation: "850m",
+    date: "11/2025",
+    image: rhcsa,
+    link: "https://www.credly.com/badges/d9fbfb90-8d4a-4b0c-af4c-9b1c10b96d08/public_url",
   },
   {
     title: "Responsive Web Design",
@@ -172,10 +181,10 @@ export function Certificates() {
                   <p className="text-sm">Elevation</p>
                   <p className="font-semibold text-white">{certificate.elevation}</p>
                 </div> */}
-                <div>
+                {/*<div>
                   <p className="text-sm">Date</p>
                   <p className="font-semibold text-white">{certificate.date}</p>
-                </div>
+                </div>*/}
               </div>
               {certificate.link === "" ? (
                 <></>
