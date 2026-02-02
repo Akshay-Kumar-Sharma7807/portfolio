@@ -13,6 +13,7 @@ import scientificpy from "../assets/Certificates/scientificpy.png";
 import isro from "../assets/Certificates/isro.png";
 import vvm from "../assets/Certificates/vvm.png";
 import sapro from "../assets/Certificates/sapro.png";
+import python from "../assets/Certificates/nptel-python.png";
 
 interface Certificate {
   title: string;
@@ -55,6 +56,14 @@ const certificates: Certificate[] = [
     date: "11/2025",
     image: rhcsa,
     link: "https://www.credly.com/badges/d9fbfb90-8d4a-4b0c-af4c-9b1c10b96d08/public_url",
+  },
+  {
+    title: "Joy of Computing With Python",
+    distance: "65km",
+    elevation: "320m",
+    date: "10/2025",
+    image: python,
+    link: python,
   },
   {
     title: "Responsive Web Design",
