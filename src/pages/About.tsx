@@ -22,7 +22,7 @@ export function About() {
         className="space-y-6 text-lg text-gray-300"
       >
         <p>
-          I'm a Creative Developer with over 2 years of experience in building
+          I'm a Creative Developer with experience in building
           digital experiences that combine technical excellence with stunning
           design.
         </p>
@@ -32,8 +32,8 @@ export function About() {
           performance and accessibility.
         </p>
         <p>
-          When I'm not coding, you can find me editing photos, writing, or
-          composing some art in my home.
+          When I'm not coding, you can find me editing photos, playing chess, writing, or
+          composing some art.
         </p>
         <div className="pt-6">
           <h2 className="text-2xl font-semibold mb-4">Skills</h2>
@@ -51,7 +51,7 @@ export function About() {
               "C",
               "DSA",
               "PWA",
-              
+
             ].map((skill) => (
               <span
                 key={skill}

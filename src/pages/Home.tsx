@@ -17,8 +17,8 @@ export function Home() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    show: { 
-      opacity: 1, 
+    show: {
+      opacity: 1,
       y: 0,
       transition: {
         type: "spring",
@@ -63,9 +63,10 @@ export function Home() {
 
           <motion.div variants={itemVariants} className="mt-6 md:mt-10">
             <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
-              I'm Akshay, a student and a full stack developer crafting digital experiences. 
+              I'm Akshay, a student and a full stack developer crafting digital experiences.
               Currently honing my skills and always building something new.{" "}
-              <a
+              Learning AI/ML to become a 10x Engineer.
+              {/* <a
                 href="https://saplings-protector.netlify.app/home"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,9 +74,9 @@ export function Home() {
               >
                 Saplings Protector
               </a>{" "}
-              is my latest project.
+              is my latest project. */}
             </p>
-            
+
             <motion.div variants={itemVariants} className="mt-10 md:mt-12 flex gap-4">
               <Link
                 to="/work"
@@ -86,7 +87,7 @@ export function Home() {
                   <ArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform w-5 h-5" />
                 </span>
               </Link>
-              
+
               <Link
                 to="/about"
                 className="inline-flex items-center px-6 py-3 bg-transparent text-white border border-gray-700 rounded-lg font-medium hover:border-gray-500 hover:bg-gray-800 transition-all"
