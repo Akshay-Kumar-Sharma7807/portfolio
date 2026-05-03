@@ -20,9 +20,6 @@ export function Work() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
             Selected Work<span className="text-orange-500">.</span>
           </h1>
-          <p className="mt-4 text-gray-400 text-lg sm:text-xl max-w-2xl font-light">
-            A showcase of my recent projects, blending functional design with technical complexity.
-          </p>
         </motion.div>
 
         <motion.div
@@ -61,35 +58,33 @@ export function Work() {
               }}
               className="group flex flex-col h-full bg-gray-900/40 backdrop-blur-sm border border-gray-800/50 hover:border-orange-500/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-orange-500/10 transition-all duration-500"
             >
-              <div className="p-2">
-                <motion.div
-                  className="relative overflow-hidden rounded-xl bg-gray-800"
-                >
-                  <FallbackImage
-                    src={project.heroImage}
-                    alt={project.title}
-                    className="w-full h-64 sm:h-72 object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                    fallbackIcon="project"
-                    loading="lazy"
-                    showLoadingState={true}
-                  />
-                  {/* Overlay that appears on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+              <motion.div
+                className="relative overflow-hidden bg-gray-800"
+              >
+                <FallbackImage
+                  src={project.heroImage}
+                  alt={project.title}
+                  className="w-full h-full sm:h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                  fallbackIcon="project"
+                  loading="lazy"
+                  showLoadingState={true}
+                />
+                {/* Overlay that appears on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
-                  {/* Floating View Details Button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <Link to={`/project/${project.id}`}>
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-full font-medium shadow-[0_0_30px_rgba(249,115,22,0.4)]"
-                      >
-                        Explore Project
-                      </motion.div>
-                    </Link>
-                  </div>
-                </motion.div>
-              </div>
+                {/* Floating View Details Button */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <Link to={`/project/${project.id}`}>
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-full font-medium shadow-[0_0_30px_rgba(249,115,22,0.4)]"
+                    >
+                      Explore Project
+                    </motion.div>
+                  </Link>
+                </div>
+              </motion.div>
 
               <div className="p-6 sm:p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
