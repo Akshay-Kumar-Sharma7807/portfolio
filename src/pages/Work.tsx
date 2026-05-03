@@ -12,15 +12,21 @@ export function Work() {
   return (
     <ErrorBoundary>
       <PageTransition className="relative min-h-screen pt-24 sm:pt-28 md:pt-32 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto">
-        <motion.h1
+        <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12"
+          className="mb-8 sm:mb-12"
         >
-          Selected Work
-        </motion.h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+            Selected Work<span className="text-orange-500">.</span>
+          </h1>
+          <p className="mt-4 text-gray-400 text-lg sm:text-xl max-w-2xl font-light">
+            A showcase of my recent projects, blending functional design with technical complexity.
+          </p>
+        </motion.div>
+
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16"
           variants={{
             hidden: { opacity: 0 },
             show: {
@@ -38,124 +44,80 @@ export function Work() {
             <motion.div
               key={project.id}
               variants={{
-                hidden: { y: 30, opacity: 0 },
+                hidden: { y: 40, opacity: 0 },
                 show: {
                   y: 0,
                   opacity: 1,
                   transition: {
                     type: "spring",
-                    stiffness: 100,
+                    stiffness: 80,
                     damping: 20
                   }
                 }
               }}
               whileHover={{
-                y: -8,
-                transition: { duration: 0.3, ease: "easeOut" }
+                y: -10,
+                transition: { duration: 0.4, ease: "easeOut" }
               }}
-              className="group"
+              className="group flex flex-col h-full bg-gray-900/40 backdrop-blur-sm border border-gray-800/50 hover:border-orange-500/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-orange-500/10 transition-all duration-500"
             >
-              <motion.div
-                className="relative overflow-hidden rounded-lg mb-4 shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <FallbackImage
-                  src={project.heroImage}
-                  alt={project.title}
-                  className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-out"
-                  fallbackIcon="project"
-                  loading="lazy"
-                  showLoadingState={true}
-                />
-                {/* Overlay that appears on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
-              <motion.h3
-                className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 group-hover:text-orange-400 transition-colors duration-300"
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-              >
-                {project.title}
-              </motion.h3>
-              <motion.p
-                className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 leading-relaxed group-hover:text-gray-300 transition-colors duration-300"
-                whileHover={{ x: 3 }}
-                transition={{ duration: 0.2, delay: 0.05 }}
-              >
-                {project.description}
-              </motion.p>
-              <motion.div
-                className="flex flex-wrap gap-2 mb-3 sm:mb-4"
-                variants={{
-                  hidden: { opacity: 0 },
-                  show: {
-                    opacity: 1,
-                    transition: {
-                      staggerChildren: 0.05,
-                      delayChildren: 0.1
-                    }
-                  }
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                {project.technologiesUsed.map((tech, techIndex) => (
-                  <motion.span
-                    key={tech}
-                    variants={{
-                      hidden: { scale: 0, opacity: 0 },
-                      show: {
-                        scale: 1,
-                        opacity: 1,
-                        transition: {
-                          type: "spring",
-                          stiffness: 200,
-                          damping: 15
-                        }
-                      }
-                    }}
-                    whileHover={{
-                      scale: 1.1,
-                      backgroundColor: "rgb(249, 115, 22)",
-                      transition: { duration: 0.2 }
-                    }}
-                    className="px-2 sm:px-3 py-1 bg-gray-800 hover:bg-orange-500 rounded-full text-xs sm:text-sm transition-colors duration-200 cursor-pointer"
-                  >
-                    {tech}
-                  </motion.span>
-                ))}
-              </motion.div>
-              <Link to={`/project/${project.id}`}>
+              <div className="p-2">
                 <motion.div
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 10px 25px rgba(249, 115, 22, 0.3)"
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-3 sm:px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all duration-300 font-medium text-sm sm:text-base touch-manipulation min-h-[44px] group/button"
+                  className="relative overflow-hidden rounded-xl bg-gray-800"
                 >
-                  <span className="group-hover/button:translate-x-1 transition-transform duration-200">
-                    View Details
-                  </span>
-                  <motion.svg
-                    className="ml-2 w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    whileHover={{ x: 3 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </motion.svg>
+                  <FallbackImage
+                    src={project.heroImage}
+                    alt={project.title}
+                    className="w-full h-64 sm:h-72 object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                    fallbackIcon="project"
+                    loading="lazy"
+                    showLoadingState={true}
+                  />
+                  {/* Overlay that appears on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+
+                  {/* Floating View Details Button */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <Link to={`/project/${project.id}`}>
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-full font-medium shadow-[0_0_30px_rgba(249,115,22,0.4)]"
+                      >
+                        Explore Project
+                      </motion.div>
+                    </Link>
+                  </div>
                 </motion.div>
-              </Link>
+              </div>
+
+              <div className="p-6 sm:p-8 flex flex-col flex-grow">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl sm:text-3xl font-bold group-hover:text-orange-400 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  {project.category && (
+                    <span className="px-3 py-1 bg-gray-800/80 rounded-full text-xs font-medium text-gray-400 border border-gray-700">
+                      {project.category}
+                    </span>
+                  )}
+                </div>
+
+                <p className="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed flex-grow font-light line-clamp-3">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.technologiesUsed.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1.5 bg-gray-800/60 rounded-lg text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/50 group-hover:border-gray-600 transition-colors duration-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

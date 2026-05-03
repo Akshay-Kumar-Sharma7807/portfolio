@@ -1,5 +1,82 @@
 [
   {
+    "id": "chronos-luxury-watch",
+    "title": "Chronos - Luxury Watch Website",
+    "description": "A modern, elegant luxury watch website inspired by high-end brands like Patek Philippe, featuring smooth animations and a fully responsive design.",
+    "longDescription": "Chronos is a premium luxury watch e-commerce website template built with React 18, TypeScript, Vite, and Tailwind CSS. Inspired by iconic high-end watch brands like Patek Philippe, the site delivers an immersive, cinematic experience complete with Framer Motion animations, glassmorphism UI elements, and a rich design language. The project includes multiple pages — Home, Collections, Collection Detail, Watch Detail, Heritage, Craftsmanship, Services, and Contact — all driven by a centralized configuration file that makes content management effortless. The architecture is performance-optimized through Vite bundling, SEO-ready with semantic HTML and proper meta tags, and fully responsive across all device sizes.",
+    "heroImage": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800",
+    "images": [
+      "/assets/chronos1.png",
+      "/assets/chronos2.png",
+      "/assets/chronos3.png"
+    ],
+    "technologiesUsed": [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Router"
+    ],
+    "liveUrl": "https://chronos-demo.netlify.app/",
+    "githubUrl": null,
+    "features": [
+      "8 fully designed pages including Heritage, Craftsmanship & Services",
+      "Smooth page transitions and micro-animations with Framer Motion",
+      "Centralized siteConfig.ts for easy content management",
+      "Watch inventory with detailed specification pages",
+      "Fully responsive layout optimized for all screen sizes",
+      "SEO-ready with semantic HTML and meta tags",
+      "Cormorant Garamond & Playfair Display typography for luxury feel",
+      "Dark, gold-accented color palette inspired by premium watch brands"
+    ],
+    "challenges": [
+      "Designing a layout that captures the luxury aesthetic of high-end watch brands",
+      "Orchestrating complex Framer Motion stagger animations across page transitions",
+      "Building a scalable data architecture with a single source-of-truth config file",
+      "Achieving consistent visual quality across diverse screen sizes and resolutions"
+    ],
+    "category": "Web Template"
+  },
+  {
+    "id": "stepout-cafe",
+    "title": "StepOut Cafe",
+    "description": "A warm, modern cafe website for a community-centric coffee shop in Jaipur, featuring an interactive menu, gallery, and integrated location map.",
+    "longDescription": "StepOut Cafe is a full-featured restaurant website built to reflect the brand's story — a community-driven cafe founded in 2018 in Jaipur, Rajasthan. The site leads visitors through an immersive journey: from a hero section with animated business statistics, to a tabbed interactive menu, a photo gallery, customer testimonials, and a Google Maps-integrated location page. The design blends amber and cream tones against deep backgrounds to create a warm, premium aesthetic. Built with React 18, Tailwind CSS, and Framer Motion, the site is fully responsive and optimized for all device sizes.",
+    "heroImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800",
+    "images": [
+      "/assets/cafe1.png",
+      "/assets/cafe2.png",
+      "/assets/cafe3.png"
+    ],
+    "technologiesUsed": [
+      "React 18",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide React",
+      "Google Maps"
+    ],
+    "liveUrl": "https://cafe7807.netlify.app/",
+    "githubUrl": null,
+    "features": [
+      "Hero section with animated counter statistics",
+      "Tabbed interactive menu (Coffee, Food & Specials)",
+      "Photo gallery showcasing cafe atmosphere and dishes",
+      "Customer testimonials section",
+      "Google Maps integration with operating hours",
+      "Contact form for customer inquiries",
+      "Responsive layout across mobile, tablet and desktop",
+      "Smooth scroll animations and backdrop-blur nav effects"
+    ],
+    "challenges": [
+      "Crafting a warm, story-driven layout that guides users from heritage to menu to location",
+      "Implementing smooth tab transitions for the interactive menu system",
+      "Balancing rich visual imagery with fast load performance",
+      "Designing animated counters that feel natural and engaging on scroll"
+    ],
+    "category": "Web Application"
+  },
+  {
     "id": "saplings-protector",
     "title": "Saplings Protector",
     "description": "A Progressive Web App (PWA) to protect trees and promote green spaces",

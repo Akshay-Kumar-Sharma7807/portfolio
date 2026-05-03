@@ -61,8 +61,8 @@ const Project = ({ projectId }: ProjectProps) => {
               loading="eager"
               showLoadingState={true}
             /> */}
-            {/* Subtle overlay to maintain readability */}
-            {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40" />
+          {/* Subtle overlay to maintain readability */}
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40" />
           </div> */}
 
           {/* Hero Content */}
@@ -70,13 +70,13 @@ const Project = ({ projectId }: ProjectProps) => {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl mx-auto"
+            className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-5xl mx-auto"
           >
             <motion.h1
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-white leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight"
             >
               {project.title}
             </motion.h1>
@@ -85,7 +85,7 @@ const Project = ({ projectId }: ProjectProps) => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto"
+              className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto font-light"
             >
               {project.description}
             </motion.p>
